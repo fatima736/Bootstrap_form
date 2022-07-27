@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 class="bg-success p-3 text-light text-center">FORM</h1>
+    <!-- form start -->
+    <div class="container">
+      <form class="row g-3 p-3 needs-validation" novalidate>
+        <!-- first-name -->
+        <div class="col-lg-6">
+          <label for="first_name" class="form-label">First Name</label>
+          <input type="text" id="first-name" class="first_name form-control" name="first_name" placeholder="Enter Your First Name" required>
+        
+        <div class="invalid-feedback">
+          Enter valid first name
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+        <!-- last-name  -->
+
+        <div class="col-lg-6">
+          <label for="last_name" class="form-label">Last Name</label>
+          <input type="text" id="last-name" class="last_name form-control" name="last_name" placeholder="Enter Your Last Name" required>
+        <div class="invalid-feedback">
+          Enter valid last name
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+        <!-- email address  -->
+
+        
+        <div class="col-lg-6">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" id="email" class="email form-control" name="email" placeholder="Enter Your Email Address" required>
+       
+        <div class="invalid-feedback">
+          Enter valid email address
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+       </div>
+
+        <!-- User-name  -->
+        <div class="col-lg-6">
+          <label for="user_name" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control user_name" id="user_name" aria-describedby="inputGroupPrepend" placeholder="Enter a username" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+          </div>
+
+          <!-- city -->
+          <div class="col-lg-4 position-relative">
+            <label for="city" class="form-label">Current City</label>
+            <input type="text" class="form-control city" id="city" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+
+          <!-- state -->
+
+          <div class="col-lg-4 position-relative">
+            <label for="state" class="form-label">State</label>
+            <select name="state" id="state" class="form-select">
+              <option value=""selected>Choose state</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">
+              Please choose a state.
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success">Submit form</button>
+          </div>
+
+
+
+      </form>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
